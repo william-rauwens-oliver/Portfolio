@@ -1,119 +1,155 @@
-*{
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #444; /* Couleur gris souris foncé */
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
-.header {
-    position: fixed;
-    top: 10px;
-    left: 10px;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.middle-text {
-    top: 50px;
-    left: 50px;
-    font-size: 10vw;
-    transform: translate(55%, 130%);
-    color: #9b8c71;
-    text-transform: uppercase;
-    letter-spacing: 2.2px;
-    text-shadow: 20px 3px 11px rgba(0,0,0,.3);
-    font-family: 'Poppins', sans-serif;
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.title {
-    margin: 25.5px 0 0 50px;
-    font-family: 'Roboto Mono', monospace;
+header h1 {
+    float: left;
 }
 
-.blue-text {
-    color: lightblue;
+nav ul {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
 }
 
-.white-text {
-    color: white;
-}
-
-.purple-text {
-    color: purple;
-}
-
-.navbar {
-    padding: 30px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.navbar li {
+nav ul li {
     display: inline;
+    margin-left: 20px;
 }
 
-.navbar a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    border-radius: 20px;
-    font-size: 17px;
+    transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-    transition: all 0.2s ease-in-out;
+nav ul li a:hover {
+    color: #f4f4f4;
 }
 
-html {
-    scroll-behavior: smooth;
+section {
+    padding: 40px 0;
 }
 
-.middle-desc {
-    position: absolute;
-    top: 400px;
-    left: 100px;
-    font-size: 30px;
-    color: white;
-    transform: translate(70%, 400%);
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
-    font-family: 'Roboto Mono', monospace;
-}
-
-.expertise-section {
+#accueil {
+    background: #f4f4f4;
     text-align: center;
 }
 
-.expertise-table {
-    margin-top: 50px;
+#projets {
+    background: #e4e4e4;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cell {
-    width: calc(33.33% - 20px); /* Pour créer des marges entre les cellules */
-    background-color: #ffffff; /* Couleur de fond */
+.project {
+    margin-bottom: 40px;
     padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #000000; /* Bordure noire */
-    height: 300px; /* Ajuster la hauteur des cellules selon vos besoins */
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.project p {
+    color: #666;
+}
+
+#a-propos {
+    background: #d4d4d4;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#a-propos h2 {
+    margin-bottom: 20px;
+}
+
+#contact {
+    background: #ccc;
+    padding-bottom: 60px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #333;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
 }
