@@ -10,6 +10,14 @@ body {
     line-height: 1.6;
 }
 
+.container2 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -182,7 +190,6 @@ footer p {
     font-size: 14px;
 }
 
-/* Style pour le titre "WillSen" */
 .title {
     text-align: center;
     padding: 20px 0;
