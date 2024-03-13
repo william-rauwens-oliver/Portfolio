@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -179,4 +180,19 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+
+/* Style pour le titre "WillSen" */
+.title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title h1 {
+    font-size: 10vw;
+    color: #9b8c71;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 20px 3px 11px rgba(0,0,0,.3);
+    
 }
