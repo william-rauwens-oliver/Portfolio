@@ -240,4 +240,49 @@ footer p {
     background-color: #555;
 }
 
+/* Style du hamburger menu */
+.hamburger-menu {
+    display: none; /* Caché par défaut */
+    cursor: pointer;
+}
+
+/* Style des barres du hamburger menu */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Style pour le hamburger menu en mode téléphone */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        display: none; /* Cacher le titre sur les écrans de petite taille */
+    }
+
+    .hamburger-menu {
+        display: block; /* Afficher le hamburger menu sur les écrans de petite taille */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+
+    .side-nav {
+        position: fixed;
+        top: 0;
+        left: -300px; /* Masqué par défaut */
+        width: 250px; /* Ajuster la largeur pour s'adapter aux écrans de petite taille */
+        height: 100%;
+        background-color: #4d4c4c;
+        padding-top: 60px;
+        transition: left 0.3s ease;
+        z-index: 999; /* Position au-dessus des autres éléments */
+    }
+
+    /* Style pour afficher la nav quand la classe 'open' est présente */
+    .side-nav.open {
+        left: 0;
+    }
+}
 
