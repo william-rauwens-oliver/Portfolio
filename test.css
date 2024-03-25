@@ -110,10 +110,10 @@ html {
 }
 
 .cell {
-    width: calc(33.33% - 20px); /* Pour créer des marges entre les cellules */
-    background-color: #ffffff; /* Couleur de fond */
+    width: calc(33.33% - 20px);
+    background-color: #ffffff;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid #000000; /* Bordure noire */
-    height: 300px; /* Ajuster la hauteur des cellules selon vos besoins */
+    border: 1px solid #000000;
+    height: 300px;
 }
