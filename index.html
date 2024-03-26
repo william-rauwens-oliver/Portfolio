@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Développement Web</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="iPhone.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,8 +24,7 @@
             <ul class="nav-links">
                 <li><a href="#accueil">// Home</a></li>
                 <li><a href="#projets">// Expertise</a></li>
-                <li><a href="#a-propos">// Work</a></li>
-                <li><a href="#experience">// Experience</a></li>
+                <li><a href="#a-propos">// À Propos</a></li>
                 <li><a href="#contact">// Contact</a></li>
             </ul>
         </nav>
@@ -45,13 +45,122 @@
             </div>
             <div class="project">
                 <h3>My Discord</h3>
-                <p>Création de Discord</p>
+                <p>Recréation de Discord</p>
                 <img src="Data/MyDiscord/Capture d'écran 2024-03-25 151023.png" alt="Connexion" style="max-width: 30%; height: auto;">
                 <img src="Data/MyDiscord/Capture d'écran 2024-03-25 151043.png" alt="Inscription" style="max-width: 29%; height: auto;">
                 <img src="Data/MyDiscord/Capture d'écran 2024-03-25 151235.png" alt="Messages" style="max-width: 30%; height: auto;">
             </div>
         </div>
-    </section>
+        <section>
+            <div class="container">
+                <div class="project">
+                    <h3>Ville De Marseille</h3>
+                    <p>Recréation Du Site de La Ville De Marseille</p>
+                    <img src="Data/VilleDeMarseille/Capture d'écran 2024-03-26 143601.png" alt="Projet 1" style="max-width: 30%; height: auto;">
+                    <img src="Data/VilleDeMarseille/Capture d'écran 2024-03-26 143630.png" alt="Projet 1" style="max-width: 30%; height: auto;">
+                    <img src="Data/VilleDeMarseille/Capture d'écran 2024-03-26 143659.png" alt="Projet 1" style="max-width: 30%; height: auto;">
+                    <a href="https://william-rauwens-oliver.students-laplateforme.io/ville-marseille/marseille1.html" class="button2">Site De La Ville de Marseille</a>
+                </div>
+            </div>      
+        </section>
+        
+        <input name="theme" type="radio" id="deep-purple" checked="checked"/>
+        <input name="theme" type="radio" id="gold"/>
+        <input name="theme" type="radio" id="space-black"/>
+        <input name="theme" type="radio" id="silver"/>
+        <input name="theme" type="radio" id="random"/>
+        <input name="zoom" type="checkbox" id="zoom"/>
+        <div class="scene">
+            <div class="pallette">
+                    <div class="icon"></div>
+                    <div class="tooltip">CMD + click to save</div>
+                </label>
+            </div>
+            <div class="zoom-con">
+               
+            </div>
+            <div class="phone-con">
+                <div class="phone">
+                    <div class="buttons">
+                        <div class="left">
+                            <div class="button"></div>
+                            <div class="button"></div>
+                            <div class="button"></div>
+                        </div>
+                        <div class="right">
+                            <div class="button"></div>
+                        </div>
+                    </div>
+                    <div class="camera"></div>
+                    <div class="screen-container">
+                        <div class="bg">
+                            <div class="deep-purple">
+                                <div class="section">
+                                    <div class="glow"></div>
+                                </div>
+                                <div class="section">
+                                    <div class="glow"></div>
+                                </div>
+                            </div>
+                            <div class="gold">
+                                <div class="section">
+                                    <div class="glow"></div>
+                                </div>
+                                <div class="section">
+                                    <div class="glow"></div>
+                                </div>
+                            </div>
+                            <div class="space-black">
+                                <div class="section">
+                                    <div class="glow"></div>
+                                </div>
+                                <div class="section">
+                                    <div class="glow"></div>
+                                </div>
+                            </div>
+                            <div class="silver">
+                                <div class="section">
+                                    <div class="glow"></div>
+                                </div>
+                                <div class="section">
+                                    <div class="glow"></div>
+                                </div>
+                            </div>
+                            <div class="random canvas">
+                                <div class="shapes">
+                                    <div class="shape"></div>
+                                    <div class="shape"></div>
+                                    <div class="shape"></div>
+                                    <div class="shape"></div>
+                                    <div class="shape"></div>
+                                    <div class="shape"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notch-container" tabIndex="0">
+                            <div class="notch">
+                                <div class="content">
+                                    <div class="left">
+                                        <div class="tile"></div>
+                                        <div class="text"></div>
+                                    </div>
+                                    <div class="right"></div>
+                                    <div class="bar">
+                                        <div class="duration"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notch-blur"></div>
+                        <div class="screen">
+                            <div class="app">
+                                <div class="weather"></div>
+                            </div>
+                            <img id="captureEcran" src="Data/iPhone/Capture d'écran 2024-03-26 161050.png" alt="VilleDeMarseilleIphone">
+            </div>
+        </div>      
+        </section>
+        
     
     <section id="a-propos">
         <div class="container">
@@ -88,6 +197,7 @@
             <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
         </div>
     </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js'></script><script src="iPhone.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
