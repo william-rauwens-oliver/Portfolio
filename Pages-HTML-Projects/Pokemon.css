@@ -1,3 +1,5 @@
+/* CSS pour le style de la page */
+
 * {
     margin: 0;
     padding: 0;
@@ -62,6 +64,7 @@ nav ul {
     margin-top: 20px;
     margin-left: 0;
 }
+
 nav ul li:hover {
     background-color: #3f3f3f;
     border-radius: 50px;
@@ -266,6 +269,8 @@ footer p {
 .button2:hover {
     background-color: #555;
 }
+
+
 
 @media only screen and (max-width: 768px) {
     header h1 {
